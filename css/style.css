@@ -1,0 +1,64 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h2 {
+  color: #007bff;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.imagen {
+  transition: transform 0.3s ease;
+}
+
+.imagen:hover {
+  transform: scale(1.03);
+}
+
+/* SOBRE NOSOTROS */
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card {
+  background-color: #f8f9fa;
+  border: none;
+}
+
+/*zoom img*/
+
+.card-img-top:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+/*Detalle*/
+
+#imagen-detalle {
+  transition: transform 0.3s ease;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+#imagen-detalle:hover {
+  transform: scale(1.05);
+}
+
+p{
+    color: black;
+}
+
+.Subtitulo{
+    color: #007bff;
+}

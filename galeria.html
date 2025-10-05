@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-dark text-white text-center p-3">
+    <h1>Galería de Imágenes</h1>
+    <nav>
+      <a href="index.html" class="btn btn-outline-light m-1">Inicio</a>
+      <a href="galeria.html" class="btn btn-outline-light m-1">Galería</a>
+      <a href="sobre-nosotros.html" class="btn btn-outline-light m-1">Sobre Nosotros</a>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <section class="text-center mb-4">
+        <button class="btn btn-primary categoria-btn" onclick="filtrarPorCategoria('todas', this)">Todas</button>
+        <button class="btn btn-outline-primary categoria-btn" onclick="filtrarPorCategoria('portafolio', this)">Portafolio</button>
+        <button class="btn btn-outline-primary categoria-btn" onclick="filtrarPorCategoria('hobbies', this)">Hobbies</button>
+    </section>
+
+    <section class="row">
+
+      <!-- Imagenes del portafolio con Boostrap -->
+
+      <div class="col-md-4 imagen" data-categoria="portafolio">
+        <div class="card mb-4">
+          <img src="assets/img/BatallaDell.jpg" class="card-img-top" alt="Batalla de arqueros por premios">
+          <div class="card-body">
+            <h5 class="card-title">Batalla de arqueros</h5>
+            <a href="detalle.html?id=BatallaDell" class="btn btn-sm btn-info">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Navidad con Samsung -->
+
+      <div class="col-md-4 imagen" data-categoria="portafolio">
+        <div class="card mb-4">
+          <img src="assets/img/Samsung.png" class="card-img-top" alt="Navidad con Samsung">
+          <div class="card-body">
+            <h5 class="card-title">Navidad con Samsung</h5>
+            <a href="detalle.html?id=Samsung" class="btn btn-sm btn-info">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Cisco y F1 -->
+
+      <div class="col-md-4 imagen" data-categoria="portafolio">
+        <div class="card mb-4">
+          <img src="assets/img/F1.jpg" class="card-img-top" alt="Premios con Cisco & F1">
+          <div class="card-body">
+            <h5 class="card-title">Cisco & F1</h5>
+            <a href="detalle.html?id=F1" class="btn btn-sm btn-info">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Dahua Neon -->
+
+      <div class="col-md-4 imagen" data-categoria="portafolio">
+        <div class="card mb-4">
+          <img src="assets/img/DahuaNeon.jpg" class="card-img-top" alt="Gana con Dahua">
+          <div class="card-body">
+            <h5 class="card-title">Gana con Dahua</h5>
+            <a href="detalle.html?id=DahuaNeon" class="btn btn-sm btn-info">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Genius -->
+
+      <div class="col-md-4 imagen" data-categoria="portafolio">
+        <div class="card mb-4">
+          <img src="assets/img/PremioGenius.jpg" class="card-img-top" alt="Premios con Genius">
+          <div class="card-body">
+            <h5 class="card-title">Premiamos la fidelidad con Genius</h5>
+            <a href="detalle.html?id=PremioGenius" class="btn btn-sm btn-info">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Jeffer -->
+
+      <div class="col-md-4 imagen" data-categoria="hobbies">
+        <div class="card mb-4">
+          <img src="assets/img/DUCATI.png" class="card-img-top" alt="Pasión por las motos">
+          <div class="card-body">
+            <h5 class="card-title">Pasión por las motos</h5>
+            <a href="detalle.html?id=DUCATI" class="btn btn-sm btn-info">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hobbi -->
+
+      <div class="col-md-4 imagen" data-categoria="hobbies">
+        <div class="card mb-4">
+          <img src="assets/img/Game.jpg" class="card-img-top" alt="Pasión por los Videojuegos">
+          <div class="card-body">
+            <h5 class="card-title">Pasión por los videojuegos</h5>
+            <a href="detalle.html?id=Game" class="btn btn-sm btn-info">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    © 2025 Mi Galería
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
